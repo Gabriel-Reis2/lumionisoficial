@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIONIS • AI &amp; DIGITAL INNOVATION</title>
+  <meta name="description" content="LUMIONIS • Inovação digital para transformar ideias em soluções reais. Escolha sua região / Seleccione su región.">
+  <link rel="icon" type="image/jpeg" href="assent/lumionis-logo.jpg">
+
+  <!-- Immediate Client-Side Language Redirection -->
+  <script>
+    (function() {
+      try {
+        var userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        if (userLang.indexOf('es') === 0) {
+          window.location.replace('es/');
+        } else {
+          window.location.replace('pt-br/');
+        }
+      } catch (e) {
+        // Fallback to manual selection below
+      }
+    })();
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #05050a;
+      font-family: 'Inter', sans-serif;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #FFFFFF 20%, #C4B5FD 65%, #38BDF8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6 text-zinc-300 relative overflow-hidden">
+  
+  <!-- Subtle Glow -->
+  <div class="absolute w-[500px] h-[500px] rounded-full bg-indigo-600/20 blur-[130px] pointer-events-none"></div>
+
+  <div class="max-w-xl w-full mx-auto text-center relative z-10">
+    <div class="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-6 border border-white/10 shadow-2xl">
+      <img src="assent/lumionis-logo.jpg" alt="Logo LUMIONIS" class="w-full h-full object-cover">
+    </div>
+
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">
+      LUMIONIS
+    </h1>
+    <p class="text-xs font-mono tracking-widest text-indigo-400 uppercase mb-8">
+      AI &amp; DIGITAL INNOVATION
+    </p>
+
+    <p class="text-sm text-zinc-400 mb-8">
+      Inovação digital para transformar ideias em soluções reais.<br>
+      <span class="text-zinc-500 text-xs">Selecione seu mercado / Seleccione su mercado:</span>
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+      <!-- Brasil -->
+      <a href="pt-br/" class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-cyan-400/50 hover:bg-white/[0.06] transition-all group block shadow-xl">
+        <div class="text-xs font-mono text-cyan-400 mb-1 flex items-center justify-between">
+          <span>BRASIL (PT-BR)</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+        <div class="text-base font-bold text-white mb-1">Versão Brasileira</div>
+        <div class="text-xs text-zinc-400 leading-relaxed font-light">
+          Atendimento local no Brasil com Gabriel (CEO).
+        </div>
+      </a>
+
+      <!-- España -->
+      <a href="es/" class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-purple-400/50 hover:bg-white/[0.06] transition-all group block shadow-xl">
+        <div class="text-xs font-mono text-purple-400 mb-1 flex items-center justify-between">
+          <span>ESPAÑA (ES)</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+        <div class="text-base font-bold text-white mb-1">Versión Española</div>
+        <div class="text-xs text-zinc-400 leading-relaxed font-light">
+          Atención comercial en España con Jhonatans.
+        </div>
+      </a>
+    </div>
+
+    <div class="mt-8 text-xs text-zinc-500 font-mono">
+      © 2026 LUMIONIS • lumionisbr@gmail.com
+    </div>
+  </div>
+
+  <script>
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="50%" stop-color="#0b1226"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad3)"/>
+  <circle cx="400" cy="250" r="280" fill="#3b82f6" opacity="0.08" filter="blur(60px)"/>
+
+  <path d="M 80,180 H 220 L 260,220 H 540 L 580,260 H 720" stroke="#00F5FF" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+  <path d="M 120,320 H 300 L 340,280 H 500 L 540,320 H 680" stroke="#8B5CF6" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+
+  <g filter="url(#shadow3)" transform="translate(60, 45)">
+    <rect width="680" height="410" rx="16" fill="#0a0f1d" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+    
+    <path d="M 0,16 Q 0,0 16,0 L 664,0 Q 680,0 680,16 L 680,48 L 0,48 Z" fill="#0e162c"/>
+    <circle cx="24" cy="24" r="5" fill="#ef4444" opacity="0.8"/>
+    <circle cx="42" cy="24" r="5" fill="#f59e0b" opacity="0.8"/>
+    <circle cx="60" cy="24" r="5" fill="#10b981" opacity="0.8"/>
+    
+    <rect x="180" y="12" width="320" height="24" rx="12" fill="#070b16" stroke="#00F5FF" stroke-opacity="0.15"/>
+    <text x="340" y="28" fill="#00F5FF" font-family="sans-serif" font-size="11" text-anchor="middle">n8n.lumionis.ai/workflows/leads-qualification</text>
+
+    <g transform="translate(30, 70)">
+      <text x="0" y="24" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="700">Engenharia de Automação &amp; Agentes de IA</text>
+      <text x="0" y="44" fill="#94a3b8" font-family="sans-serif" font-size="11">WORKFLOWS CONECTADOS: WEBHOOKS • POSTGRESQL • LLM • WHATSAPP</text>
+
+      <g transform="translate(0, 65)">
+        <rect x="10" y="30" width="130" height="70" rx="10" fill="#111a33" stroke="#00F5FF" stroke-width="1.5"/>
+        <circle cx="35" cy="55" r="12" fill="#00F5FF" fill-opacity="0.2"/>
+        <text x="35" y="59" fill="#00F5FF" font-family="sans-serif" font-size="12" text-anchor="middle">⚡</text>
+        <text x="55" y="55" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Webhook</text>
+        <text x="55" y="72" fill="#64748b" font-family="sans-serif" font-size="9">Novo Lead Inbound</text>
+        <circle cx="140" cy="65" r="5" fill="#00F5FF"/>
+
+        <path d="M 140,65 L 180,65" stroke="#00F5FF" stroke-width="2" stroke-dasharray="4,2"/>
+
+        <rect x="180" y="15" width="150" height="100" rx="12" fill="#152042" stroke="url(#cyanPurple)" stroke-width="2"/>
+        <circle cx="210" cy="45" r="14" fill="#8B5CF6" fill-opacity="0.3"/>
+        <text x="210" y="50" fill="#c084fc" font-family="sans-serif" font-size="14" text-anchor="middle">🤖</text>
+        <text x="235" y="45" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Agente IA</text>
+        <text x="235" y="62" fill="#a855f7" font-family="sans-serif" font-size="10">LangChain + LLM</text>
+        <rect x="195" y="78" width="120" height="22" rx="4" fill="#090e1d"/>
+        <text x="255" y="93" fill="#38bdf8" font-family="monospace" font-size="9" text-anchor="middle">Análise &amp; Score</text>
+        <circle cx="330" cy="65" r="5" fill="#8B5CF6"/>
+
+        <path d="M 330,65 C 360,65 360,40 390,40" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+        <path d="M 330,65 C 360,65 360,95 390,95" stroke="#3b82f6" stroke-width="2" fill="none"/>
+
+        <rect x="390" y="15" width="130" height="50" rx="8" fill="#111a33" stroke="#10b981" stroke-width="1.5"/>
+        <text x="405" y="35" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">WhatsApp API</text>
+        <text x="405" y="50" fill="#10b981" font-family="sans-serif" font-size="9">Disparo Imediato</text>
+
+        <rect x="390" y="75" width="130" height="50" rx="8" fill="#111a33" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="405" y="95" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">PostgreSQL</text>
+        <text x="405" y="110" fill="#60a5fa" font-family="sans-serif" font-size="9">Armazenamento</text>
+
+        <rect x="545" y="20" width="75" height="100" rx="8" fill="#0d152a" stroke="#ffffff" stroke-opacity="0.1"/>
+        <text x="582" y="45" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Tempo</text>
+        <text x="582" y="65" fill="#10b981" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">&lt; 1.2s</text>
+        <text x="582" y="88" fill="#94a3b8" font-family="sans-serif" font-size="9" text-anchor="middle">Autônomo</text>
+        <circle cx="582" cy="102" r="4" fill="#10b981"/>
+      </g>
+
+      <g transform="translate(0, 205)">
+        <rect width="620" height="100" rx="10" fill="#070a14" stroke="#ffffff" stroke-opacity="0.06"/>
+        <text x="15" y="25" fill="#64748b" font-family="monospace" font-size="10">[2026-09-08 20:00:12] [SYSTEM] Listening to n8n Webhook triggers...</text>
+        <text x="15" y="45" fill="#00F5FF" font-family="monospace" font-size="10">[2026-09-08 20:00:14] [AGENT] Lead payload received. Extraction initiated with LangChain LLM.</text>
+        <text x="15" y="65" fill="#8B5CF6" font-family="monospace" font-size="10">[2026-09-08 20:00:15] [SCORE] High qualification detected (0.94). Route assigned to VIP queue.</text>
+        <text x="15" y="85" fill="#10b981" font-family="monospace" font-size="10">[2026-09-08 20:00:16] [SUCCESS] WhatsApp dispatched to customer &amp; internal CRM updated in 1180ms.</text>
+      </g>
+    </g>
+  </g>
+</svg>

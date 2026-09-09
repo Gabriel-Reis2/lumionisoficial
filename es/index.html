@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>LUMIONIS • Innovación Digital, IA y Automatización de Procesos</title>
+  <meta name="title" content="LUMIONIS • Innovación Digital, IA y Automatización de Procesos">
+  <meta name="description" content="LUMIONIS desarrolla soluciones tecnológicas avanzadas, automatización con IA y n8n, agentes virtuales y aplicaciones web de alto rendimiento para empresas en España.">
+  <meta name="keywords" content="innovación digital españa, inteligencia artificial empresas, automatización de procesos n8n, desarrollo web corporativo, agentes de IA, marketing digital españa, tráfico cualificado">
+  <meta name="author" content="LUMIONIS">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lumionis.ai/es/">
+  <meta property="og:title" content="LUMIONIS • Innovación Digital, IA y Automatización de Procesos">
+  <meta property="og:description" content="Innovación digital para transformar ideas en soluciones reales. Software moderno, agentes inteligentes y automatización para empresas.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://lumionis.ai/es/">
+  <meta property="twitter:title" content="LUMIONIS • Innovación Digital, IA y Automatización de Procesos">
+  <meta property="twitter:description" content="Innovación digital para transformar ideas en soluciones reales. Soluciones tecnológicas e IA para el mercado español.">
+  <meta property="twitter:image" content="assets/images/logo.jpg">
+
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Runtime -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#05050a',
+            brandSurface: '#090c14',
+            brandElevated: '#0f1422',
+            brandCyan: '#00F5FF',
+            brandBlue: '#3B82F6',
+            brandPurple: '#8B5CF6'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide Icons Runtime -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Core Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-brandDark text-zinc-400 font-sans antialiased relative selection:bg-brandPurple/30 selection:text-white bg-tech-grid">
+
+  <!-- Ambient Decorative Lighting / Auras -->
+  <div class="aura-glow aura-purple w-[600px] h-[600px] top-[-100px] left-1/2 -translate-x-1/2 opacity-60"></div>
+  <div class="aura-glow aura-blue w-[500px] h-[500px] top-[1400px] right-[-100px] opacity-40"></div>
+  <div class="aura-glow aura-cyan w-[550px] h-[550px] top-[2600px] left-[-150px] opacity-35"></div>
+  <div class="aura-glow aura-purple w-[600px] h-[600px] bottom-[400px] right-1/4 opacity-40"></div>
+
+  <!-- =========================================================================
+       1. HEADER / NAVEGACIÓN (ESPAÑA)
+       ========================================================================= -->
+  <header id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-6 lg:px-12 border-b border-transparent">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3.5 group text-decoration-none">
+        <div class="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 shadow-lg shadow-black/50 group-hover:border-brandCyan/50 transition-colors">
+          <img src="assets/images/logo.jpg" alt="Logo LUMIONIS" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-white font-bold tracking-tight text-lg leading-tight group-hover:text-brandCyan transition-colors">LUMIONIS</span>
+          <span class="font-mono text-[9px] uppercase tracking-widest text-zinc-400">AI &amp; DIGITAL INNOVATION</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-medium tracking-wide">
+        <a href="#hero" class="text-zinc-300 hover:text-white transition-colors">Inicio</a>
+        <a href="#sobre" class="text-zinc-400 hover:text-white transition-colors">Sobre nosotros</a>
+        <a href="#servicios" class="text-zinc-400 hover:text-white transition-colors">Servicios</a>
+        <a href="#portfolio" class="text-zinc-400 hover:text-white transition-colors">Proyectos</a>
+        <a href="#processo" class="text-zinc-400 hover:text-white transition-colors">Proceso</a>
+        <a href="#diferenciais" class="text-zinc-400 hover:text-white transition-colors">Diferenciales</a>
+        <a href="#equipo" class="text-zinc-400 hover:text-white transition-colors">Equipo</a>
+        <a href="#contato" class="text-zinc-400 hover:text-white transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Language Selector & Header CTA (WhatsApp Jhonatans) -->
+      <div class="hidden sm:flex items-center gap-4">
+        <div class="lang-switch">
+          <a href="../pt-br/" class="hover:text-white" title="Versão em Português">PT-BR</a>
+          <a href="#" class="active" aria-label="Español (España)">ES</a>
+        </div>
+
+        <!-- WhatsApp Asesor Comercial Jhonatans (+34 664 20 71 48) -->
+        <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20He%20conocido%20LUMIONIS%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20innovaci%C3%B3n%20digital." target="_blank" rel="noopener noreferrer" class="btn-lumionis-primary text-xs py-2 px-5">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 mr-2"></i>
+          <span>Hablar con LUMIONIS</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobile-toggle" aria-label="Abrir Menú" aria-expanded="false" class="lg:hidden p-2 rounded-xl bg-white/5 border border-white/10 text-zinc-300 hover:text-white focus:outline-none">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="lg:hidden mt-3 max-w-7xl mx-auto rounded-2xl p-6 bg-brandSurface/95 border border-white/10 shadow-2xl backdrop-blur-2xl">
+      <nav class="flex flex-col gap-4 text-sm font-medium">
+        <a href="#hero" class="mobile-link text-zinc-300 hover:text-white py-1">Inicio</a>
+        <a href="#sobre" class="mobile-link text-zinc-400 hover:text-white py-1">Sobre nosotros</a>
+        <a href="#servicios" class="mobile-link text-zinc-400 hover:text-white py-1">Servicios</a>
+        <a href="#portfolio" class="mobile-link text-zinc-400 hover:text-white py-1">Proyectos</a>
+        <a href="#processo" class="mobile-link text-zinc-400 hover:text-white py-1">Proceso</a>
+        <a href="#diferenciais" class="mobile-link text-zinc-400 hover:text-white py-1">Diferenciales</a>
+        <a href="#equipo" class="mobile-link text-zinc-400 hover:text-white py-1">Equipo en España</a>
+        <a href="#contato" class="mobile-link text-zinc-400 hover:text-white py-1">Contacto</a>
+      </nav>
+
+      <div class="pt-5 mt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-zinc-400 font-mono">Idioma:</span>
+          <div class="lang-switch">
+            <a href="../pt-br/">PT-BR</a>
+            <a href="#" class="active">ES</a>
+          </div>
+        </div>
+
+        <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20He%20conocido%20LUMIONIS%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20innovaci%C3%B3n%20digital." target="_blank" rel="noopener noreferrer" class="btn-lumionis-primary w-full text-center mt-2 text-xs py-2.5">
+          <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i>
+          Hablar con LUMIONIS España
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION (ESPAÑA)
+       ========================================================================= -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
+    <!-- Particle Canvas Layer -->
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0 opacity-70"></canvas>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+      
+      <!-- Top Badge -->
+      <div class="badge-tech mb-6 animate-pulse">
+        <span class="badge-dot"></span>
+        <span>LUMIONIS • AI &amp; DIGITAL INNOVATION</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] max-w-4xl text-balance mb-6">
+        Innovación digital para transformar <span class="text-gradient-lumionis">ideas en soluciones reales.</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-10 font-normal">
+        Desarrollamos soluciones digitales de alto rendimiento, automatización de procesos mediante IA, aplicaciones web modernas, agentes inteligentes y estrategias de captación para impulsar su empresa en el mercado español.
+      </p>
+
+      <!-- CTA Buttons Group -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto justify-center mb-16">
+        <!-- CTA Principal: WhatsApp Jhonatans (+34 664 20 71 48) -->
+        <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20He%20conocido%20LUMIONIS%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20innovaci%C3%B3n%20digital." target="_blank" rel="noopener noreferrer" class="btn-lumionis-primary w-full sm:w-auto text-sm py-3.5 px-8 group">
+          <i data-lucide="message-square" class="w-4 h-4 mr-2.5 group-hover:scale-110 transition-transform"></i>
+          <span>Hablar con LUMIONIS</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+
+        <!-- CTA Secundário: Portfólio -->
+        <a href="#portfolio" class="btn-lumionis-secondary w-full sm:w-auto text-sm py-3.5 px-8">
+          <i data-lucide="folder-git-2" class="w-4 h-4 mr-2 text-brandCyan"></i>
+          <span>Ver nuestros proyectos</span>
+        </a>
+      </div>
+
+      <!-- Technology Chips Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-3xl pt-8 border-t border-white/5 text-left">
+        <div class="glass-panel rounded-xl p-3 flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-brandCyan/10 border border-brandCyan/20 flex items-center justify-center text-brandCyan">
+            <i data-lucide="cpu" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-white">Agentes de IA</div>
+            <div class="text-[10px] text-zinc-400 font-mono">LangChain &amp; LLMs</div>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl p-3 flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-brandPurple/10 border border-brandPurple/20 flex items-center justify-center text-brandPurple">
+            <i data-lucide="workflow" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-white">Automatizaciones</div>
+            <div class="text-[10px] text-zinc-400 font-mono">n8n &amp; APIs REST</div>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl p-3 flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+            <i data-lucide="globe" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-white">Web Apps</div>
+            <div class="text-[10px] text-zinc-400 font-mono">Alta Velocidad</div>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl p-3 flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-white">Captación</div>
+            <div class="text-[10px] text-zinc-400 font-mono">Tráfico &amp; Conversión</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. SOBRE LUMIONIS
+       ========================================================================= -->
+  <section id="sobre" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Column: Context -->
+        <div class="lg:col-span-6 reveal-on-scroll">
+          <div class="badge-tech mb-4">
+            <span class="badge-dot"></span>
+            <span>Sobre Nosotros</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            Tecnología punta e Inteligencia Artificial <span class="text-gradient-lumionis">aplicadas a los retos reales de su empresa.</span>
+          </h2>
+          <p class="text-zinc-300 leading-relaxed mb-6 font-light">
+            <strong class="text-white font-medium">LUMIONIS</strong> es una empresa tecnológica especializada en soluciones digitales de ingeniería para empresas, profesionales y negocios que desean optimizar su operativa, automatizar tareas repetitivas y aprovechar el potencial de la Inteligencia Artificial para generar más oportunidades de negocio.
+          </p>
+          <p class="text-zinc-400 leading-relaxed mb-8 font-light text-sm">
+            Evitamos las plantillas genéricas y las soluciones superficiales. Integramos desarrollo web ágil, automatización estructurada con plataformas como n8n, agentes de lenguaje natural y estrategias de captación para ofrecer escalabilidad y rentabilidad tangible.
+          </p>
+
+          <!-- Core Values Badges -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+              <div class="text-brandCyan font-mono text-sm font-semibold mb-1">01. Automatización Real</div>
+              <p class="text-xs text-zinc-400">Eliminación metódica de fricciones manuales en ventas, soporte y administración.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+              <div class="text-brandPurple font-mono text-sm font-semibold mb-1">02. IA Estratégica</div>
+              <p class="text-xs text-zinc-400">Modelos de IA adaptados a la cualificación de clientes potenciales y soporte continuo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Institutional Feature Visual -->
+        <div class="lg:col-span-6 reveal-on-scroll">
+          <div class="glass-panel rounded-2xl p-8 border border-white/10 relative overflow-hidden card-tech-glow">
+            <div class="flex items-center justify-between pb-6 mb-6 border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+                <span class="font-mono text-xs uppercase tracking-widest text-zinc-300">Posicionamiento Tecnológico</span>
+              </div>
+              <span class="font-mono text-xs text-brandCyan">LUMIONIS • España</span>
+            </div>
+
+            <div class="space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-brandCyan flex-shrink-0">
+                  <i data-lucide="layers" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold text-sm mb-1">Ingeniería Digital a Medida</h3>
+                  <p class="text-xs text-zinc-400 leading-relaxed">Desarrollo de aplicaciones y sitios corporativos optimizados minuciosamente para máxima velocidad, accesibilidad y conversión.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-brandPurple flex-shrink-0">
+                  <i data-lucide="git-merge" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold text-sm mb-1">Automatizaciones Integradas con n8n</h3>
+                  <p class="text-xs text-zinc-400 leading-relaxed">Conexión de bases de datos, webhooks, CRMs y canales de mensajería para estructurar flujos autónomos y sin errores.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-brandBlue flex-shrink-0">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold text-sm mb-1">Asesoramiento Comercial Local</h3>
+                  <p class="text-xs text-zinc-400 leading-relaxed">Atención comercial directa y personalizada en España para entender su mercado y coordinar la implementación técnica.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs text-zinc-400 font-mono">¿Hablamos de su proyecto?</span>
+              <a href="#contato" class="text-xs font-semibold text-brandCyan hover:text-white flex items-center gap-1.5 transition-colors">
+                Contactar con nuestro equipo <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. SERVICIOS (6 SERVICIOS OFICIALES)
+       ========================================================================= -->
+  <section id="servicios" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5 bg-brandSurface/40">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="badge-tech mb-4">
+          <span class="badge-dot"></span>
+          <span>Cartera de Servicios</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Servicios de innovación y <span class="text-gradient-lumionis">desarrollo tecnológico</span>
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+          Diseñados para elevar la presencia digital de su negocio y automatizar procesos con rigurosidad técnica.
+        </p>
+      </div>
+
+      <!-- Services Grid (Exact 6 Services) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Servicio 1: Desarrollo Web -->
+        <div class="glass-panel glass-panel-hover rounded-2xl p-7 flex flex-col justify-between reveal-on-scroll card-tech-glow border-t-2 border-t-brandCyan/40">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandCyan/10 border border-brandCyan/20 flex items-center justify-center text-brandCyan mb-6">
+              <i data-lucide="code-2" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2.5">Desarrollo Web</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-6">
+              Sitios corporativos, landing pages de alta conversión y aplicaciones web modernas, responsivas y optimizadas para velocidad y SEO.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+            <span class="font-mono text-[11px] text-zinc-400">Rendimiento y SEO</span>
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20Me%20gustar%C3%ADa%20solicitar%20presupuesto%20para%20Desarrollo%20Web." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brandCyan hover:text-white flex items-center gap-1 transition-colors">
+              Consultar servicio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 2: Portafolio Digital -->
+        <div class="glass-panel glass-panel-hover rounded-2xl p-7 flex flex-col justify-between reveal-on-scroll card-tech-glow border-t-2 border-t-brandPurple/40">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandPurple/10 border border-brandPurple/20 flex items-center justify-center text-brandPurple mb-6">
+              <i data-lucide="layout" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2.5">Portafolio Digital</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-6">
+              Creación de portafolios profesionales interactivos para destacar proyectos, servicios y resultados con estética de alto nivel.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+            <span class="font-mono text-[11px] text-zinc-400">Diseño Premium</span>
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20Me%20interesa%20un%20Portafolio%20Digital%20profesional." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brandPurple hover:text-white flex items-center gap-1 transition-colors">
+              Consultar servicio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Automatización de Procesos -->
+        <div class="glass-panel glass-panel-hover rounded-2xl p-7 flex flex-col justify-between reveal-on-scroll card-tech-glow border-t-2 border-t-brandBlue/40">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brandBlue/10 border border-brandBlue/20 flex items-center justify-center text-brandBlue mb-6">
+              <i data-lucide="workflow" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2.5">Automatización de Procesos</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-6">
+              Automatización de rutinas empresariales utilizando integraciones, APIs, webhooks y workflows complejos en plataformas como n8n.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+            <span class="font-mono text-[11px] text-zinc-400">Flujos n8n</span>
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20Deseo%20automatizar%20procesos%20con%20n8n%20en%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brandBlue hover:text-white flex items-center gap-1 transition-colors">
+              Consultar servicio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 4: Agentes Virtuales e IA -->
+        <div class="glass-panel glass-panel-hover rounded-2xl p-7 flex flex-col justify-between reveal-on-scroll card-tech-glow border-t-2 border-t-emerald-500/40">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2.5">Agentes Virtuales e IA</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-6">
+              Desarrollo de asistentes inteligentes para atención al cliente, cualificación de leads, análisis de documentos y apoyo operacional.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+            <span class="font-mono text-[11px] text-zinc-400">LangChain &amp; LLMs</span>
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20Quisiera%20incorporar%20Agentes%20Virtuales%20de%20IA%20en%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:text-white flex items-center gap-1 transition-colors">
+              Consultar servicio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 5: Marketing Digital y Análisis de Datos -->
+        <div class="glass-panel glass-panel-hover rounded-2xl p-7 flex flex-col justify-between reveal-on-scroll card-tech-glow border-t-2 border-t-amber-500/40">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6">
+              <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2.5">Marketing Digital y Análisis de Datos</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-6">
+              Planificación estratégica para fortalecimiento de presencia digital, autoridad de marca y generación de oportunidades reales.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+            <span class="font-mono text-[11px] text-zinc-400">Analítica Comercial</span>
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20Me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20Marketing%20Digital%20y%20Datos." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-amber-400 hover:text-white flex items-center gap-1 transition-colors">
+              Consultar servicio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 6: Tráfico Pago -->
+        <div class="glass-panel glass-panel-hover rounded-2xl p-7 flex flex-col justify-between reveal-on-scroll card-tech-glow border-t-2 border-t-rose-500/40">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-6">
+              <i data-lucide="target" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2.5">Tráfico Pago</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-6">
+              Gestión de campañas en Meta Ads (Instagram/Facebook) y Google Ads con inteligencia de público para alta conversión de leads.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+            <span class="font-mono text-[11px] text-zinc-400">Google &amp; Meta Ads</span>
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20Me%20interesa%20la%20gesti%C3%B3n%20de%20Tr%C3%A1fico%20Pago%20y%20campa%C3%B1as." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-rose-400 hover:text-white flex items-center gap-1 transition-colors">
+              Consultar servicio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. CÓMO PODEMOS AYUDAR A SU EMPRESA
+       ========================================================================= -->
+  <section class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="max-w-3xl mb-16 reveal-on-scroll">
+        <div class="badge-tech mb-4">
+          <span class="badge-dot"></span>
+          <span>Acompañamiento Estratégico</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Cómo impulsamos la <span class="text-gradient-lumionis">evolución de su empresa</span>
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+          Aportamos la solidez técnica y la cercanía comercial necesarias para optimizar su operativa sin complejidades innecesarias.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="glass-panel rounded-2xl p-6 reveal-on-scroll">
+          <div class="text-brandCyan font-mono text-2xl font-bold mb-3">01</div>
+          <h3 class="text-white font-semibold text-base mb-2">Diagnóstico Inicial</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Analizamos minuciosamente sus procesos actuales para detectar fugas de tiempo, costes superfluos y oportunidades de automatización.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 reveal-on-scroll">
+          <div class="text-brandPurple font-mono text-2xl font-bold mb-3">02</div>
+          <h3 class="text-white font-semibold text-base mb-2">Diseño de Arquitectura</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Planificamos la solución idónea: automatizaciones en n8n, asistentes con modelos LLM o una presencia web de máxima conversión.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 reveal-on-scroll">
+          <div class="text-brandBlue font-mono text-2xl font-bold mb-3">03</div>
+          <h3 class="text-white font-semibold text-base mb-2">Despliegue Sin Fricción</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Implementamos y conectamos las herramientas respetando la operativa diaria de su equipo, garantizando estabilidad desde el primer minuto.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 reveal-on-scroll">
+          <div class="text-emerald-400 font-mono text-2xl font-bold mb-3">04</div>
+          <h3 class="text-white font-semibold text-base mb-2">Evolución Continua</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Supervisamos el rendimiento y ajustamos parámetros para que su negocio crezca con autonomía y rentabilidad sostenida.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. PORTAFOLIO / PROYECTOS
+       ========================================================================= -->
+  <section id="portfolio" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5 bg-brandSurface/30">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-on-scroll gap-6">
+        <div>
+          <div class="badge-tech mb-4">
+            <span class="badge-dot"></span>
+            <span>Casos de Estudio</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Proyectos reales en <span class="text-gradient-lumionis">funcionamiento</span>
+          </h2>
+        </div>
+        <p class="text-zinc-400 text-xs sm:text-sm max-w-md font-light">
+          Ejemplos prácticos de desarrollo web, experiencias de usuario interactivas y arquitectura de automatización con inteligencia artificial.
+        </p>
+      </div>
+
+      <!-- Projects Grid (3 Exact Real Projects) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- PROYECTO 01: Barbearia -->
+        <div class="glass-panel glass-panel-hover rounded-2xl overflow-hidden flex flex-col justify-between reveal-on-scroll group border border-white/10">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden bg-black/50 border-b border-white/5">
+              <img src="assets/images/project-barbearia.svg" alt="Sistema de Reservas para Barbería" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md border border-white/10 text-[10px] font-mono text-brandCyan">Desarrollo Web</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandCyan transition-colors">
+                Blade &amp; Co. | Sistema de Citas Online
+              </h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-4">
+                Aplicación web corporativa con reserva de citas en tiempo real, catálogo de servicios, selección de profesionales y confirmación instantánea.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <a href="https://gabriel-reis2.github.io/barbeariaES/" target="_blank" rel="noopener noreferrer" class="btn-lumionis-secondary w-full text-xs py-2.5 flex items-center justify-center gap-2">
+              <span>Ver proyecto online</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROYECTO 02: Cafetoria -->
+        <div class="glass-panel glass-panel-hover rounded-2xl overflow-hidden flex flex-col justify-between reveal-on-scroll group border border-white/10">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden bg-black/50 border-b border-white/5">
+              <img src="assets/images/project-cafetoria.svg" alt="Cafetoria CØFF" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md border border-white/10 text-[10px] font-mono text-brandPurple">Presencia Digital</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-brandPurple transition-colors">
+                CØFF | Cafetería de Especialidad
+              </h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-4">
+                Presencia digital refinada y carta interactiva para cafetería de café de especialidad, con diseño estético premium y presentación de productos.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <a href="https://gabriel-reis2.github.io/Cafetoria/" target="_blank" rel="noopener noreferrer" class="btn-lumionis-secondary w-full text-xs py-2.5 flex items-center justify-center gap-2">
+              <span>Ver proyecto online</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROYECTO 03: Portafolio de Automatización & IA -->
+        <div class="glass-panel glass-panel-hover rounded-2xl overflow-hidden flex flex-col justify-between reveal-on-scroll group border border-white/10">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden bg-black/50 border-b border-white/5">
+              <img src="assets/images/project-automacao.svg" alt="Portafolio de Automatizaciones e IA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 left-3">
+                <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md border border-white/10 text-[10px] font-mono text-emerald-400">Automatización e IA</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                Ingeniería de Automatización e IA
+              </h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light mb-4">
+                Plataforma técnica demostrando flujos en n8n, integración de APIs REST, agentes conversacionales con LangChain y automatización de datos.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <a href="https://gabriel-reis2.github.io/portfolio-githubcel/" target="_blank" rel="noopener noreferrer" class="btn-lumionis-secondary w-full text-xs py-2.5 flex items-center justify-center gap-2">
+              <span>Ver proyecto online</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. PROCESO DE TRABAJO (ESPAÑA)
+       ========================================================================= -->
+  <section id="processo" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="badge-tech mb-4">
+          <span class="badge-dot"></span>
+          <span>Metodología de Trabajo</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Un proceso riguroso y <span class="text-gradient-lumionis">transparente</span>
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+          Estructuramos cada fase para garantizar entregas puntuales y resultados verificables.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        
+        <!-- Step 1 -->
+        <div class="glass-panel rounded-2xl p-6 relative z-10 reveal-on-scroll border-t-2 border-t-brandCyan/50">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-mono text-2xl font-bold text-brandCyan">01</span>
+            <div class="w-8 h-8 rounded-lg bg-brandCyan/10 flex items-center justify-center text-brandCyan">
+              <i data-lucide="search" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Entendimiento</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Analizamos a fondo su negocio, el problema operativo y los objetivos para definir una solución exacta.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-panel rounded-2xl p-6 relative z-10 reveal-on-scroll border-t-2 border-t-brandPurple/50">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-mono text-2xl font-bold text-brandPurple">02</span>
+            <div class="w-8 h-8 rounded-lg bg-brandPurple/10 flex items-center justify-center text-brandPurple">
+              <i data-lucide="compass" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Estrategia</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Definimos la mejor arquitectura tecnológica y comercial, fijando herramientas, integraciones y plazos.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-panel rounded-2xl p-6 relative z-10 reveal-on-scroll border-t-2 border-t-brandBlue/50">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-mono text-2xl font-bold text-brandBlue">03</span>
+            <div class="w-8 h-8 rounded-lg bg-brandBlue/10 flex items-center justify-center text-brandBlue">
+              <i data-lucide="code" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Desarrollo</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Construimos e implementamos la solución con código depurado, pruebas exhaustivas y diseño responsivo.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-panel rounded-2xl p-6 relative z-10 reveal-on-scroll border-t-2 border-t-emerald-400/50">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-mono text-2xl font-bold text-emerald-400">04</span>
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+              <i data-lucide="sliders" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Optimización</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Analizamos el rendimiento en vivo, ajustamos flujos y evolucionamos el proyecto de manera continua.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. DIFERENCIALES
+       ========================================================================= -->
+  <section id="diferenciais" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5 bg-brandSurface/40">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="max-w-3xl mx-auto text-center mb-16 reveal-on-scroll">
+        <div class="badge-tech mb-4">
+          <span class="badge-dot"></span>
+          <span>Ventajas Competitivas</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+          Diferenciales reales basados en <span class="text-gradient-lumionis">compromiso y tecnología</span>
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+          Razones concretas por las que empresas confían en LUMIONIS para sus proyectos clave.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-brandCyan mb-4">
+            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Tecnología aplicada a problemas reales</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Enfocamos los desarrollos en resolver necesidades operativas y comerciales tangibles, sin artificios.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-brandPurple mb-4">
+            <i data-lucide="sliders-horizontal" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Soluciones personalizadas</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Cada cliente cuenta con una arquitectura diseñada a medida de su sector y de su estructura de datos.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-brandBlue mb-4">
+            <i data-lucide="merge" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Tecnología y estrategia unificadas</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Alineamos el código y las interfaces directamente con sus metas comerciales y de conversión.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-emerald-400 mb-4">
+            <i data-lucide="repeat" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Automatización de procesos</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Integraciones estables mediante n8n para reducir tareas repetitivas y liberar el potencial de su equipo.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-amber-400 mb-4">
+            <i data-lucide="brain" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Inteligencia Artificial práctica</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Modelos de IA configurados con precisión técnica para resolver consultas, clasificar leads y asistir operaciones.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-rose-400 mb-4">
+            <i data-lucide="zap" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mb-2">Desarrollo moderno y enfoque a resultados</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed font-light">
+            Código limpio, máxima velocidad de carga y experiencias que transmiten confianza inmediata a sus clientes.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. FUNDADOR / EQUIPO (SITE ES: GABRIEL - CEO & JHONATANS - ASESOR COMERCIAL ESPAÑA)
+       ========================================================================= -->
+  <section id="equipo" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-16 reveal-on-scroll">
+        <div class="badge-tech mb-4">
+          <span class="badge-dot"></span>
+          <span>Equipo y Dirección</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+          Profesionales detrás de <span class="text-gradient-lumionis">LUMIONIS</span>
+        </h2>
+        <p class="text-zinc-400 text-sm max-w-xl mx-auto font-light">
+          Dirección técnica global y asesoramiento comercial directo para el mercado de España.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- CARD 1: Gabriel — CEO de LUMIONIS -->
+        <div class="glass-panel rounded-3xl p-8 border border-white/10 reveal-on-scroll flex flex-col justify-between card-tech-glow">
+          <div>
+            <div class="flex items-center gap-5 mb-6">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden border-2 border-brandCyan/40 shadow-xl flex-shrink-0">
+                <img src="assets/images/gabriel.png" alt="Gabriel — CEO de LUMIONIS" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white tracking-tight">Gabriel dos Reis Andrade</h3>
+                <span class="text-xs font-mono text-brandCyan block">CEO &amp; Fundador • LUMIONIS</span>
+                <span class="badge-tech text-[10px] mt-2 py-0.5 px-2">Ingeniero de IA y Automatizaciones</span>
+              </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light mb-4">
+              Lidera la dirección técnica, ingeniería de software y desarrollo de soluciones de Inteligencia Artificial en <strong class="text-white">LUMIONIS</strong>.
+            </p>
+
+            <p class="text-xs text-zinc-400 leading-relaxed font-light mb-4">
+              Estudiante de grado en <strong class="text-zinc-200">Análisis y Desarrollo de Sistemas (ADS)</strong> por Uninter, cuenta con formación especializada en <strong class="text-zinc-200">Ingeniería de Agentes de IA, AI Designer, Automatización con n8n</strong> y <strong class="text-zinc-200">Python para IA</strong> por Asimov Academy.
+            </p>
+
+            <p class="text-xs text-zinc-400 leading-relaxed font-light mb-6">
+              Especialista en flujos de automatización con Python y n8n, arquitecturas con LangChain, APIs REST y plataformas web de alta velocidad.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] font-mono text-zinc-300">Python</span>
+            <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] font-mono text-zinc-300">n8n</span>
+            <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] font-mono text-zinc-300">LangChain</span>
+            <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] font-mono text-zinc-300">Web Dev</span>
+          </div>
+        </div>
+
+        <!-- CARD 2: Jhonatans — Asesor Comercial en España (EXCLUSIVE TO ES SITE) -->
+        <div class="glass-panel rounded-3xl p-8 border border-white/10 reveal-on-scroll flex flex-col justify-between card-tech-glow border-t-2 border-t-brandPurple/60">
+          <div>
+            <div class="flex items-center gap-5 mb-6">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden border-2 border-brandPurple/50 shadow-xl flex-shrink-0">
+                <img src="assets/images/jhonatans.jpg" alt="Jhonatans — Asesor Comercial en España" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white tracking-tight">Jhonatans</h3>
+                <span class="text-xs font-mono text-brandPurple block">Asesor Comercial en España</span>
+                <span class="badge-tech text-[10px] mt-2 py-0.5 px-2 text-emerald-400 border-emerald-500/30">Contacto Directo España</span>
+              </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light mb-4">
+              Jhonatans actúa como asesor comercial de <strong class="text-white">LUMIONIS</strong> en España, siendo el interlocutor directo para empresas y clientes en territorio español.
+            </p>
+
+            <p class="text-xs text-zinc-400 leading-relaxed font-light mb-4">
+              Se encarga de evaluar las necesidades comerciales específicas de su organización, coordinar reuniones de diagnóstico y guiar la propuesta tecnológica adecuada a los estándares del mercado europeo.
+            </p>
+
+            <p class="text-xs text-zinc-400 leading-relaxed font-light mb-6">
+              Su presencia asegura un trato cercano, ágil y personalizado para proyectos que buscan modernización digital, automatización de rutinas y adopción de IA en España.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-white/5">
+            <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20He%20conocido%20LUMIONIS%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-lumionis-primary w-full text-xs py-2.5 flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Contactar con Jhonatans (+34 664 20 71 48)</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. CTA DE CAPTACIÓN (ESPAÑA)
+       ========================================================================= -->
+  <section class="py-20 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5 bg-gradient-to-b from-transparent to-brandSurface/60">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="glass-panel rounded-3xl p-8 sm:p-14 text-center relative overflow-hidden border border-brandPurple/30 shadow-2xl card-tech-glow">
+        <div class="badge-tech mb-4">
+          <span class="badge-dot"></span>
+          <span>Inicie Su Proyecto</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6 max-w-2xl mx-auto leading-tight">
+          ¿Preparado para impulsar la transformación <span class="text-gradient-lumionis">digital de su empresa?</span>
+        </h2>
+
+        <p class="text-sm sm:text-base text-zinc-300 max-w-xl mx-auto leading-relaxed mb-10 font-light">
+          Acelere su productividad, automatice gestiones repetitivas e incorpore Inteligencia Artificial adaptada a sus objetivos comerciales.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/34664207148?text=Hola,%20Jhonatans.%20He%20conocido%20LUMIONIS%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20innovaci%C3%B3n%20digital." target="_blank" rel="noopener noreferrer" class="btn-lumionis-primary text-sm py-3.5 px-8 w-full sm:w-auto">
+            <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i>
+            <span>Hablar con LUMIONIS por WhatsApp</span>
+          </a>
+          <a href="#contato" class="btn-lumionis-secondary text-sm py-3.5 px-8 w-full sm:w-auto">
+            <i data-lucide="mail" class="w-4 h-4 mr-2 text-brandCyan"></i>
+            <span>Enviar formulario de contacto</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. FORMULARIO DE CONTACTO (ESPAÑA)
+       ========================================================================= -->
+  <section id="contato" class="py-24 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Column: Contact Direct Info -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="badge-tech mb-4">
+            <span class="badge-dot"></span>
+            <span>Atención Comercial</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+            Comencemos a trabajar en su <span class="text-gradient-lumionis">próxima solución.</span>
+          </h2>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-8 font-light">
+            Contacte con nuestro equipo para concertar una sesión informativa y evaluar la solución idónea para su operativa.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-zinc-400 block">WhatsApp Asesor Comercial (España)</span>
+                <a href="https://wa.me/34664207148" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-emerald-400 transition-colors">
+                  +34 664 20 71 48 (Jhonatans)
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+              <div class="w-10 h-10 rounded-lg bg-brandCyan/10 border border-brandCyan/20 flex items-center justify-center text-brandCyan flex-shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-zinc-400 block">E-mail Institucional</span>
+                <a href="mailto:lumionisbr@gmail.com" class="text-sm font-semibold text-white hover:text-brandCyan transition-colors">
+                  lumionisbr@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+              <div class="w-10 h-10 rounded-lg bg-brandPurple/10 border border-brandPurple/20 flex items-center justify-center text-brandPurple flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-mono text-zinc-400 block">Cobertura</span>
+                <span class="text-sm font-medium text-white">España y Clientes Internacionales</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Form -->
+        <div class="lg:col-span-7 reveal-on-scroll">
+          <div class="glass-panel rounded-3xl p-8 border border-white/10">
+            <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+              <i data-lucide="send" class="w-4 h-4 text-brandCyan"></i>
+              <span>Solicitud de contacto y presupuesto</span>
+            </h3>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="nome" class="block text-xs font-medium text-zinc-300 mb-1.5">Nombre y apellidos *</label>
+                  <input type="text" id="nome" name="nome" required placeholder="Su nombre" class="form-input">
+                </div>
+                <div>
+                  <label for="empresa" class="block text-xs font-medium text-zinc-300 mb-1.5">Empresa / Organización</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nombre de su empresa" class="form-input">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="email" class="block text-xs font-medium text-zinc-300 mb-1.5">Correo electrónico corporativo *</label>
+                  <input type="email" id="email" name="email" required placeholder="correo@suempresa.es" class="form-input">
+                </div>
+                <div>
+                  <label for="whatsapp" class="block text-xs font-medium text-zinc-300 mb-1.5">Teléfono / WhatsApp</label>
+                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="+34 600 00 00 00" class="form-input">
+                </div>
+              </div>
+
+              <div>
+                <label for="servico" class="block text-xs font-medium text-zinc-300 mb-1.5">Servicio de interés principal</label>
+                <select id="servico" name="servico" class="form-input text-zinc-300 bg-brandDark">
+                  <option value="Desarrollo Web">Desarrollo Web</option>
+                  <option value="Portafolio Digital">Portafolio Digital</option>
+                  <option value="Automatización de Procesos">Automatización de Procesos (n8n)</option>
+                  <option value="Agentes Virtuales e IA">Agentes Virtuales e IA</option>
+                  <option value="Marketing Digital y Análisis de Datos">Marketing Digital y Análisis de Datos</option>
+                  <option value="Tráfico Pago">Tráfico Pago (Meta &amp; Google Ads)</option>
+                  <option value="Auditoría Tecnológica">Auditoría Tecnológica</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="mensagem" class="block text-xs font-medium text-zinc-300 mb-1.5">Describa brevemente su necesidad o proyecto *</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Explique brevemente sus objetivos o procesos a mejorar..." class="form-input"></textarea>
+              </div>
+
+              <div id="form-feedback" class="hidden"></div>
+
+              <button type="submit" class="btn-lumionis-primary w-full text-sm py-3 flex items-center justify-center gap-2 mt-4">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Enviar Solicitud a Jhonatans</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. FOOTER (ESPAÑA)
+       ========================================================================= -->
+  <footer class="py-16 px-4 sm:px-6 lg:px-12 border-t border-white/10 bg-brandDark relative z-10 text-xs">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/5">
+        
+        <!-- Brand Summary -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.jpg" alt="LUMIONIS" class="w-8 h-8 rounded-lg border border-white/10">
+            <span class="text-white font-bold tracking-tight text-base">LUMIONIS</span>
+          </div>
+          <p class="text-zinc-400 leading-relaxed font-light max-w-sm">
+            Innovación digital para transformar ideas en soluciones reales. Desarrollo web corporativo, flujos de automatización y agentes de Inteligencia Artificial.
+          </p>
+          <div class="text-zinc-500 font-mono text-[11px]">
+            E-mail institucional: <a href="mailto:lumionisbr@gmail.com" class="text-zinc-400 hover:text-white transition-colors">lumionisbr@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-2">
+          <div class="font-semibold text-white font-mono uppercase text-[11px] tracking-wider mb-3">Navegación</div>
+          <div><a href="#hero" class="text-zinc-400 hover:text-white transition-colors">Inicio</a></div>
+          <div><a href="#sobre" class="text-zinc-400 hover:text-white transition-colors">Sobre nosotros</a></div>
+          <div><a href="#servicios" class="text-zinc-400 hover:text-white transition-colors">Servicios</a></div>
+          <div><a href="#portfolio" class="text-zinc-400 hover:text-white transition-colors">Proyectos reales</a></div>
+          <div><a href="#processo" class="text-zinc-400 hover:text-white transition-colors">Metodología</a></div>
+          <div><a href="#diferenciais" class="text-zinc-400 hover:text-white transition-colors">Diferenciales</a></div>
+          <div><a href="#equipo" class="text-zinc-400 hover:text-white transition-colors">Equipo</a></div>
+          <div><a href="#contato" class="text-zinc-400 hover:text-white transition-colors">Contacto</a></div>
+        </div>
+
+        <!-- Direct Contact & Markets -->
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-semibold text-white font-mono uppercase text-[11px] tracking-wider mb-3">Contacto Comercial</div>
+          <div class="text-zinc-400">
+            <strong class="text-zinc-200">España:</strong> Jhonatans (Asesor Comercial)<br>
+            <a href="https://wa.me/34664207148" target="_blank" rel="noopener noreferrer" class="text-brandCyan hover:underline font-mono">+34 664 20 71 48</a>
+          </div>
+          <div class="text-zinc-400 pt-2">
+            <strong class="text-zinc-200">Mercado Brasil:</strong><br>
+            <a href="../pt-br/" class="text-brandPurple hover:underline font-mono">Ver sitio web en Portugués (PT-BR) →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & System Status -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 font-mono text-[11px]">
+        <div>
+          © 2026 LUMIONIS • AI &amp; DIGITAL INNOVATION. Todos los derechos reservados.
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Servicios Operativos en Línea</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

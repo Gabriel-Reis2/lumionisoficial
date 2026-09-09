@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0f13"/>
+      <stop offset="50%" stop-color="#14161d"/>
+      <stop offset="100%" stop-color="#08090b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#aa820a"/>
+    </linearGradient>
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad1)"/>
+  <rect width="800" height="500" fill="url(#glowG)"/>
+  
+  <path d="M 0,100 L 800,100 M 0,200 L 800,200 M 0,300 L 800,300 M 0,400 L 800,400" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M 150,0 L 150,500 M 350,0 L 350,500 M 550,0 L 550,500 M 700,0 L 700,500" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <g filter="url(#shadow1)" transform="translate(60, 45)">
+    <rect width="680" height="410" rx="16" fill="#121319" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+    
+    <path d="M 0,16 Q 0,0 16,0 L 664,0 Q 680,0 680,16 L 680,48 L 0,48 Z" fill="#171922"/>
+    <circle cx="24" cy="24" r="5" fill="#ef4444" opacity="0.8"/>
+    <circle cx="42" cy="24" r="5" fill="#f59e0b" opacity="0.8"/>
+    <circle cx="60" cy="24" r="5" fill="#10b981" opacity="0.8"/>
+    
+    <rect x="180" y="12" width="320" height="24" rx="12" fill="#0d0e13" stroke="#ffffff" stroke-opacity="0.06"/>
+    <text x="340" y="28" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">bladeandco.com/agendamento</text>
+
+    <g transform="translate(30, 70)">
+      <text x="0" y="24" fill="#d4af37" font-family="Georgia, serif" font-size="20" font-weight="700" letter-spacing="3">BLADE &amp; CO.</text>
+      <text x="0" y="44" fill="#64748b" font-family="sans-serif" font-size="11" letter-spacing="1">BARBER SHOP • RESERVA ONLINE</text>
+
+      <g transform="translate(360, 10)">
+        <rect width="260" height="34" rx="17" fill="#1a1c26" stroke="#ffffff" stroke-opacity="0.05"/>
+        <circle cx="25" cy="17" r="10" fill="#d4af37"/>
+        <text x="25" y="21" fill="#000000" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">1</text>
+        <circle cx="100" cy="17" r="10" fill="#2d3142"/>
+        <text x="100" y="21" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">2</text>
+        <circle cx="175" cy="17" r="10" fill="#2d3142"/>
+        <text x="175" y="21" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">3</text>
+        <circle cx="240" cy="17" r="6" fill="#10b981"/>
+      </g>
+
+      <g transform="translate(0, 75)">
+        <rect width="190" height="190" rx="12" fill="#181a24" stroke="#d4af37" stroke-width="1.5"/>
+        <rect x="15" y="15" width="40" height="40" rx="8" fill="#d4af37" fill-opacity="0.15"/>
+        <path d="M 27,43 L 43,27 M 27,27 L 43,43" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="15" y="85" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="600">Corte Signature</text>
+        <text x="15" y="105" fill="#94a3b8" font-family="sans-serif" font-size="11">Fade, tesoura &amp; lavagem</text>
+        <text x="15" y="145" fill="#d4af37" font-family="sans-serif" font-size="18" font-weight="700">R$ 65,00</text>
+        <text x="15" y="165" fill="#64748b" font-family="sans-serif" font-size="10">Duração: 45 min</text>
+        <circle cx="165" cy="25" r="8" fill="#d4af37"/>
+        <path d="M 161,25 L 164,28 L 169,22" stroke="#000" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+        <g transform="translate(210, 0)">
+          <rect width="190" height="190" rx="12" fill="#141620" stroke="#ffffff" stroke-opacity="0.08"/>
+          <rect x="15" y="15" width="40" height="40" rx="8" fill="#ffffff" fill-opacity="0.05"/>
+          <path d="M 35,25 C 28,30 28,40 35,45 C 42,40 42,30 35,25 Z" fill="#94a3b8"/>
+          <text x="15" y="85" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="600">Barba &amp; Toalha</text>
+          <text x="15" y="105" fill="#94a3b8" font-family="sans-serif" font-size="11">Alinhamento e hidratação</text>
+          <text x="15" y="145" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="700">R$ 50,00</text>
+          <text x="15" y="165" fill="#64748b" font-family="sans-serif" font-size="10">Duração: 35 min</text>
+        </g>
+
+        <g transform="translate(420, 0)">
+          <rect width="200" height="190" rx="12" fill="#141620" stroke="#ffffff" stroke-opacity="0.08"/>
+          <text x="15" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Horários Disponíveis</text>
+          <text x="15" y="48" fill="#d4af37" font-family="sans-serif" font-size="10" font-weight="600">HOJE • 24 OUT</text>
+          
+          <g transform="translate(15, 65)">
+            <rect width="75" height="28" rx="6" fill="#d4af37"/>
+            <text x="37" y="18" fill="#000" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">14:00</text>
+            
+            <rect x="85" width="75" height="28" rx="6" fill="#1f2330" stroke="#ffffff" stroke-opacity="0.1"/>
+            <text x="122" y="18" fill="#e2e8f0" font-family="sans-serif" font-size="11" text-anchor="middle">15:00</text>
+
+            <rect y="38" width="75" height="28" rx="6" fill="#1f2330" stroke="#ffffff" stroke-opacity="0.1"/>
+            <text x="37" y="56" fill="#e2e8f0" font-family="sans-serif" font-size="11" text-anchor="middle">16:30</text>
+
+            <rect x="85" y="38" width="75" height="28" rx="6" fill="#1f2330" stroke="#ffffff" stroke-opacity="0.1"/>
+            <text x="122" y="56" fill="#e2e8f0" font-family="sans-serif" font-size="11" text-anchor="middle">17:15</text>
+          </g>
+
+          <rect x="15" y="145" width="170" height="30" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.3"/>
+          <text x="100" y="164" fill="#10b981" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">✓ Barbeiro Selecionado</text>
+        </g>
+      </g>
+
+      <g transform="translate(0, 285)">
+        <rect width="620" height="42" rx="8" fill="url(#goldGrad)"/>
+        <text x="310" y="26" fill="#000000" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="1" text-anchor="middle">CONFIRMAR HORÁRIO VIA WHATSAPP →</text>
+      </g>
+    </g>
+  </g>
+</svg>
