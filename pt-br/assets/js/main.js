@@ -7,60 +7,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Navbar no Scroll
   const navbar = document.getElementById('main-nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      navbar.classList.add('bg-[#05050a]/95', 'border-white/10', 'shadow-2xl', 'backdrop-blur-xl');
-      navbar.classList.remove('bg-transparent', 'border-transparent');
-    } else {
-      navbar.classList.remove('bg-[#05050a]/95', 'border-white/10', 'shadow-2xl', 'backdrop-blur-xl');
-      navbar.classList.add('bg-transparent', 'border-transparent');
-    }
-  });
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        navbar.classList.add('bg-[#05050a]/95', 'border-white/10', 'shadow-2xl', 'backdrop-blur-xl');
+        navbar.classList.remove('bg-transparent', 'border-transparent');
+      } else {
+        navbar.classList.remove('bg-[#05050a]/95', 'border-white/10', 'shadow-2xl', 'backdrop-blur-xl');
+        navbar.classList.add('bg-transparent', 'border-transparent');
+      }
+    });
+  }
 
-  // 3. Menu Mobile
+  // 3. Menu Mobile (Abertura/Fechamento fluido e sem vazamento de layout)
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
   if (mobileToggle && mobileMenu) {
     mobileToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-      const isExpanded = mobileMenu.classList.contains('active');
-      mobileToggle.setAttribute('aria-expanded', isExpanded);
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          mobileMenu.classList.add('active');
+        });
+        mobileToggle.setAttribute('aria-expanded', 'true');
+      } else {
+        mobileMenu.classList.remove('active');
+        mobileMenu.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
+        mobileMenu.classList.add('hidden');
         mobileToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
 
-  // 4. Hero Particle Canvas (Alta performance, 60fps)
+  // 4. Hero Particle Canvas (Totalmente contido na largura da tela)
   const canvas = document.getElementById('hero-canvas');
-  if (canvas) {
+  if (canvas && canvas.parentElement) {
     const ctx = canvas.getContext('2d');
-    let width = canvas.width = canvas.parentElement.offsetWidth;
+    let width = canvas.width = Math.min(canvas.parentElement.offsetWidth, window.innerWidth);
     let height = canvas.height = canvas.parentElement.offsetHeight;
 
     window.addEventListener('resize', () => {
       if (canvas.parentElement) {
-        width = canvas.width = canvas.parentElement.offsetWidth;
+        width = canvas.width = Math.min(canvas.parentElement.offsetWidth, window.innerWidth);
         height = canvas.height = canvas.parentElement.offsetHeight;
       }
     });
 
     const particles = [];
-    const count = window.innerWidth < 768 ? 25 : 55;
+    const count = window.innerWidth < 768 ? 20 : 50;
 
     for (let i = 0; i < count; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
-        size: Math.random() * 2 + 1,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        size: Math.random() * 2 + 0.8,
         color: Math.random() > 0.4 ? 'rgba(0, 245, 255, ' : 'rgba(139, 92, 246, '
       });
     }
@@ -96,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 110) {
+          if (dist < 95) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(139, 92, 246, ${0.18 * (1 - dist / 110)})`;
-            ctx.lineWidth = 0.8;
+            ctx.strokeStyle = `rgba(139, 92, 246, ${0.16 * (1 - dist / 95)})`;
+            ctx.lineWidth = 0.75;
             ctx.stroke();
           }
         }
@@ -121,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
 
   document.querySelectorAll('.reveal-on-scroll').forEach(el => {
     el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-6');
@@ -148,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Montar mensagem para o WhatsApp do Gabriel (+55 21 99856-3527)
       let textoMsg = `*Contato LUMIONIS - Site Brasil*\n\n`;
       textoMsg += `*Nome:* ${nome}\n`;
       if (empresa) textoMsg += `*Empresa:* ${empresa}\n`;

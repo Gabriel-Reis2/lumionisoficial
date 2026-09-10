@@ -64,11 +64,13 @@
 </head>
 <body class="bg-brandDark text-zinc-400 font-sans antialiased relative selection:bg-brandPurple/30 selection:text-white bg-tech-grid">
 
-  <!-- Ambient Decorative Lighting / Auras -->
-  <div class="aura-glow aura-purple w-[600px] h-[600px] top-[-100px] left-1/2 -translate-x-1/2 opacity-60"></div>
-  <div class="aura-glow aura-blue w-[500px] h-[500px] top-[1400px] right-[-100px] opacity-40"></div>
-  <div class="aura-glow aura-cyan w-[550px] h-[550px] top-[2600px] left-[-150px] opacity-35"></div>
-  <div class="aura-glow aura-purple w-[600px] h-[600px] bottom-[400px] right-1/4 opacity-40"></div>
+  <!-- Ambient Decorative Lighting / Auras (Contained to prevent mobile horizontal blowout) -->
+  <div class="aura-wrapper fixed inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+    <div class="aura-glow aura-purple w-[600px] h-[600px] top-[-100px] left-1/2 -translate-x-1/2 opacity-60"></div>
+    <div class="aura-glow aura-blue w-[500px] h-[500px] top-[1400px] right-[-100px] opacity-40"></div>
+    <div class="aura-glow aura-cyan w-[550px] h-[550px] top-[2600px] left-[-150px] opacity-35"></div>
+    <div class="aura-glow aura-purple w-[600px] h-[600px] bottom-[400px] right-1/4 opacity-40"></div>
+  </div>
 
   <!-- =========================================================================
        1. HEADER / NAVEGAÇÃO
@@ -77,13 +79,13 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       
       <!-- Brand Logo -->
-      <a href="#hero" class="flex items-center gap-3.5 group text-decoration-none">
-        <div class="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 shadow-lg shadow-black/50 group-hover:border-brandCyan/50 transition-colors">
+      <a href="#hero" class="flex items-center gap-3 group text-decoration-none min-w-0">
+        <div class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden border border-white/10 shadow-lg shadow-black/50 group-hover:border-brandCyan/50 transition-colors shrink-0">
           <img src="assets/images/logo.jpg" alt="Logo LUMIONIS" class="w-full h-full object-cover">
         </div>
-        <div class="flex flex-col">
-          <span class="text-white font-bold tracking-tight text-lg leading-tight group-hover:text-brandCyan transition-colors">LUMIONIS</span>
-          <span class="font-mono text-[9px] uppercase tracking-widest text-zinc-400">AI &amp; DIGITAL INNOVATION</span>
+        <div class="flex flex-col min-w-0">
+          <span class="text-white font-bold tracking-tight text-base sm:text-lg leading-tight group-hover:text-brandCyan transition-colors truncate">LUMIONIS</span>
+          <span class="font-mono text-[8px] sm:text-[9px] uppercase tracking-widest text-zinc-400 truncate">AI &amp; DIGITAL INNOVATION</span>
         </div>
       </a>
 
@@ -118,7 +120,7 @@
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="lg:hidden mt-3 max-w-7xl mx-auto rounded-2xl p-6 bg-brandSurface/95 border border-white/10 shadow-2xl backdrop-blur-2xl">
+    <div id="mobile-menu" class="hidden lg:hidden mt-3 max-w-7xl mx-auto rounded-2xl p-6 bg-brandSurface/95 border border-white/10 shadow-2xl backdrop-blur-2xl">
       <nav class="flex flex-col gap-4 text-sm font-medium">
         <a href="#hero" class="mobile-link text-zinc-300 hover:text-white py-1">Início</a>
         <a href="#sobre" class="mobile-link text-zinc-400 hover:text-white py-1">Sobre</a>
@@ -188,7 +190,7 @@
       </div>
 
       <!-- Technology Chips Bar -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-3xl pt-8 border-t border-white/5 text-left">
+      <div class="grid grid-cols-1 min-[480px]:grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-3xl pt-8 border-t border-white/5 text-left min-w-0">
         <div class="glass-panel rounded-xl p-3 flex items-center gap-3">
           <div class="w-8 h-8 rounded-lg bg-brandCyan/10 border border-brandCyan/20 flex items-center justify-center text-brandCyan">
             <i data-lucide="cpu" class="w-4 h-4"></i>
@@ -256,7 +258,7 @@
           </p>
 
           <!-- Core Values Badges -->
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
               <div class="text-brandCyan font-mono text-sm font-semibold mb-1">01. Automação Real</div>
               <p class="text-xs text-zinc-400">Eliminação cirúrgica de tarefas manuais e repetitivas em setores operacionais e de atendimento.</p>
@@ -826,7 +828,7 @@
       </div>
 
       <!-- Gabriel Card -->
-      <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-white/10 reveal-on-scroll relative overflow-hidden card-tech-glow">
+      <div class="glass-panel rounded-3xl p-6 sm:p-12 border border-white/10 reveal-on-scroll relative overflow-hidden card-tech-glow">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           
           <!-- Photo Column -->
@@ -885,7 +887,7 @@
   <section class="py-20 px-4 sm:px-6 lg:px-12 relative z-10 border-t border-white/5 bg-gradient-to-b from-transparent to-brandSurface/60">
     <div class="max-w-5xl mx-auto">
       
-      <div class="glass-panel rounded-3xl p-8 sm:p-14 text-center relative overflow-hidden border border-brandPurple/30 shadow-2xl card-tech-glow">
+      <div class="glass-panel rounded-3xl p-6 sm:p-14 text-center relative overflow-hidden border border-brandPurple/30 shadow-2xl card-tech-glow">
         <div class="badge-tech mb-4">
           <span class="badge-dot"></span>
           <span>Próximo Passo</span>
@@ -974,7 +976,7 @@
 
         <!-- Right Column: Interactive Form -->
         <div class="lg:col-span-7 reveal-on-scroll">
-          <div class="glass-panel rounded-3xl p-8 border border-white/10">
+          <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10">
             <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
               <i data-lucide="send" class="w-4 h-4 text-brandCyan"></i>
               <span>Envie uma mensagem para a LUMIONIS</span>
