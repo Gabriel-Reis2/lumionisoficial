@@ -1,0 +1,8 @@
+# robots.txt for LUMIONIS • AI & DIGITAL INNOVATION
+# Domain: https://lumionis-ai.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://lumionis-ai.com/sitemap.xml
