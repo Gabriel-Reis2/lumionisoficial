@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 1. Página Inicial / Gateway Global (x-default) -->
+  <url>
+    <loc>https://lumionis-ai.com/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lumionis-ai.com/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lumionis-ai.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://lumionis-ai.com/es/" />
+    <lastmod>2026-09-10</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. Versão em Português Brasileiro (Mercado Brasil) -->
+  <url>
+    <loc>https://lumionis-ai.com/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lumionis-ai.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://lumionis-ai.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lumionis-ai.com/" />
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 3. Versão em Espanhol (Mercado Espanha / Europa) -->
+  <url>
+    <loc>https://lumionis-ai.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://lumionis-ai.com/es/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lumionis-ai.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lumionis-ai.com/" />
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
